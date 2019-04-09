@@ -1,1 +1,82 @@
-Please see <a href="http://gridballast.com">gridballast.com</a>.
+<head>
+	<style type='text/css'>
+	body {
+	  max-width: 45rem;
+	  padding: 2rem;
+	  margin: auto;
+	  font-family: sans-serif;
+	  line-height: 160%;
+	  text-align: justify;
+	}
+	h1 {
+		padding-top: 2rem;
+	}
+	table {
+		width: 100%;
+		padding-top: 1rem;
+	}
+	a:link {
+		color: #9FBC5D;
+	}
+	a:visited {
+		color: #3A4A48;
+	}
+	img {
+		width: 100%;
+	}
+	td {
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<img src='im_gb_logo.png'>
+	<h1>Overview</h1>
+	<p>GridBallast is a research project funded by <a href='https://arpa-e.energy.gov/?q=programs/nodes'>ARPA-E</a> and led by <a href='https://www.electric.coop'>NRECA</a>, the National Rural Electric Cooperative Association. It is developing low cost control devices for water heaters and residential circuits that can operate autonomously to improve the stability and resilience of the North American electric grid.  Project partners include <a href='https://users.ece.cmu.edu/~agr/'>Carnegie Mellon University</a> (CMU), <a href='https://www.eaton.com/EatonCA/ProductsSolutions/Electrical/MarketSolutions/SmartGrid/index.htm'>Eaton</a>, and <a href='http://www.sparkmeter.io'>SparkMeter.</a>
+	<h1>Hardware</h1>
+	The GridBallast controllers measure grid frequency and voltage locally and control the loads to fix deviations from safe operating limits. An open source controller hardware platform shown below has been developed at CMU. A water heater controller has been developed at Eaton, and a residential circuit controller has been developed at SparkMeter.
+	<table>
+		<tr>
+			<td><img src='im_opengb_hw.jpg'></td>
+			<td><img src='im_opengb_schema.png'></td>
+		</tr>
+		<tr>
+			<td><em><a href='https://github.com/gridballast/gridballastOpenHardware'>OpenGB</a> Hardware</em></td>
+			<td><em>Schematic for <a href='https://github.com/gridballast/gridballastOpenHardware'>OpenGB</a></em></td>
+		</tr>
+		<tr style='height:1rem'></tr>
+		<tr>
+			<td><img src='im_eaton_lcr.jpg'></td>
+			<td><img src='im_sparkmeter_sscgb.jpg'></td>
+		</tr>
+		<tr>
+			<td><em>Eaton WaterHeaterGB Controller</em></td>
+			<td><em>SparkMeter SmartCircuitGB Controller</em></td>
+		</tr>
+	</table>
+	<h1>Simulation</h1>
+	Before testing in the laboratory, we will run simulations to prove the safety and effectiveness of the controls. Simulations will be built on top of the Open Modeling Framework, an open source electric grid modeling platform (shown below in screenshots and a video walkthrough). A more detailed report on the simulation results is also available.
+	<table>
+		<tr>
+			<td colspan='2'><img src='im_util_wide.png'></td>
+		</tr>
+		<tr>
+			<td colspan='2'><em><a href='https://github.com/gridballast/utilitySimGb'>Utility Simulation</a> of Frequency and Voltage</em></td>
+		</tr>
+		<tr style='height:1rem'></tr>
+		<tr>
+			<td><img src='im_control_jupyter.jpg'></td>
+			<td><iframe src='https://drive.google.com/file/d/0B0hLAR4WQ4X4d3VvUWFiWHNqbzA/preview'></iframe></td>
+		</tr>
+		<tr>
+			<td><em><a href='https://github.com/gridballast/deviceSimulatorGb'>Load and Controller Simulation</a></em></td>
+			<td><em>Utility Simulation Demo Video</em></td>
+		</tr>
+	</table>
+	<h1>Open Source</h1>
+	<p>All project source code, documentation, and analysis are linked above and are available in open source at <a href='https://github.com/gridballast'>https://github.com/gridballast</a>.</p>
+	<h1>Project Schedule</h1>
+	<p>Development of the core algorithms and simulation results showing their effectiveness was completed in 2017. The hardware was developed in 2018. Field demonstrations at two rural electric cooperatives will be completed in 2019.</p>
+	<h1>Contact</h1>
+	<p>For any questions, please email <a href='mailto:admin@gridballast.com'>admin@gridballast.com</a>.</p>
+</body>
