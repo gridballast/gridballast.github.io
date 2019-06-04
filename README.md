@@ -1,2 +1,1 @@
-# gridballast.com
-Website for GridBallast
+Content on http://gridballast.com
